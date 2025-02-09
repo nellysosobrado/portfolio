@@ -559,38 +559,50 @@ footer {
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    justify-content: center;
     margin-top: 2rem;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    box-shadow: 0 0 15px rgba(255, 251, 40, 0.774);
+}
+
+.cta-button.primary:hover {
+    background-color: transparent;
+    color: #007bff;
+    box-shadow: 0 0 15px rgba(255, 251, 40, 0.774);
 }
 
 .cta-button.secondary {
     background-color: transparent;
-    border: 2px solid #309975;
-    color: #309975;
+    color: #333;
+    border: 2px solid #333;
 }
 
 .cta-button.secondary:hover {
-    background-color: #309975;
-    color: #efeeb4;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 251, 40, 0.774);
 }
 
-.cta-button.github {
-    background-color: #454d66;
-    color: #efeeb4;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.cta-button.github:hover {
-    background-color: #000000;
-    transform: translateY(-2px);
-}
-
-.cta-button.github i {
-    font-size: 1.2rem;
-}
+.cta-button i {
+    font-size: 1.1rem;
+}       
 
 /* Responsive Design */
 @media (max-width: 768px) {
