@@ -7,15 +7,15 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #efeeb4;
+    background-color: #ffffff;
 }
 
 /* Navigation */
 nav {
     position: fixed;
     width: 100%;
-    background-color: #454d66;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
     z-index: 1000;
 }
 
@@ -31,7 +31,7 @@ nav {
 .logo a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #efeeb4;
+    color: #333333;
     font-weight: bold;
 }
 
@@ -46,12 +46,12 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #efeeb4;
+    color: #333333;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #dad873;
+    color: #666666;
 }
 
 /* Hero Section */
@@ -61,7 +61,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #efeeb4;
+    background-color: #ffffff;
     color: #000000;
     position: relative;
 }
@@ -88,41 +88,34 @@ nav {
 }
 
 .hero-description p {
-    color: #000000;
+    color: #666666;
     font-size: 1.2rem;
     max-width: 600px;
     margin: 1.5rem auto;
     line-height: 1.6;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    background-color: #309975;
-    color: #efeeb4;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+.cta-button, .project-link, button {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #e0e0e0;
+    box-shadow: none;
 }
 
-.cta-button:hover {
-    background-color: #58b368;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.cta-button:hover, .project-link:hover, button:hover {
+    background-color: #f5f5f5;
+    transform: none;
+    box-shadow: none;
 }
 
 /* Sections */
 section {
     padding: 5rem 2rem;
-    background-color: #efeeb4;
+    background-color: #ffffff;
 }
 
 section:nth-child(even) {
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 section h2 {
@@ -151,13 +144,11 @@ section h2:after {
     margin: 0 auto;
 }
 
-.project-card {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-left: 5px solid #309975;
-    transition: transform 0.3s ease;
+.project-card, .timeline-item, .experience-item {
+    background-color: #ffffff;
+    border-left: 1px solid #e0e0e0;
+    box-shadow: none;
+    border-radius: 4px;
 }
 
 .project-card:hover {
@@ -166,36 +157,29 @@ section h2:after {
 
 .project-link {
     display: inline-block;
-    background-color: #309975;
-    color: #fff;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
     text-decoration: none;
     margin-top: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-.project-link:hover {
-    background-color: #58b368;
 }
 
 /* Contact Form */
 .contact-content {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
 }
 
 .contact-info {
     text-align: center;
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: #454d66;
-    border-radius: 10px;
-    color: #efeeb4;
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #e0e0e0;
 }
 
 .contact-info p {
@@ -213,8 +197,9 @@ section h2:after {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: #454d66;
-    color: #efeeb4;
+    background-color: #ffffff;
+    color: #333333;
+    border-top: 1px solid #e0e0e0;
 }
 
 /* Responsive Design */
@@ -284,12 +269,13 @@ footer {
 }
 
 .info-item {
-    background-color: #454d66;
-    color: #efeeb4;
+    background-color: #ffffff;
+    color: #333333;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
+    border: 1px solid #e0e0e0;
 }
 
 .info-item:hover {
@@ -297,7 +283,7 @@ footer {
 }
 
 .info-item h4 {
-    color: #dad873;
+    color: #333333;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
@@ -309,17 +295,8 @@ footer {
 }
 
 .timeline-item {
-    background-color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-left: 5px solid #309975;
-    transition: transform 0.3s ease;
-}
-
-.timeline-item:hover {
-    transform: translateX(10px);
 }
 
 .timeline-item h3 {
@@ -330,12 +307,13 @@ footer {
 
 .date {
     display: inline-block;
-    background-color: #309975;
-    color: #efeeb4;
+    background-color: #f5f5f5;
+    color: #333333;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
     margin: 0.5rem 0;
+    border: 1px solid #e0e0e0;
 }
 
 .timeline-item ul {
@@ -358,16 +336,7 @@ footer {
 }
 
 .experience-item {
-    background-color: #fff;
     padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-left: 5px solid #309975;
-    transition: transform 0.3s ease;
-}
-
-.experience-item:hover {
-    transform: translateY(-5px);
 }
 
 .experience-item h3 {
@@ -378,7 +347,7 @@ footer {
 
 .role {
     display: inline-block;
-    background-color: #58b368;
+    background-color: #5c7d88;
     color: #efeeb4;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -398,40 +367,42 @@ footer {
 
 /* Info items */
 .info-item {
-    background-color: #454d66;
-    color: #efeeb4;
+    background-color: #ffffff;
+    color: #333333;
     padding: 1.5rem;
     border-radius: 10px;
 }
 
 .info-item h4 {
-    color: #dad873;
+    color: #333333;
 }
 
 /* Timeline och Experience items */
 .timeline-item, .experience-item, .project-card {
-    background-color: #fff;
-    border-left: 5px solid #309975;
+    background-color: #ffffff;
+    border-left: 1px solid #e0e0e0;
 }
 
 .date {
-    background-color: #309975;
-    color: #efeeb4;
+    background-color: #f5f5f5;
+    color: #333333;
 }
 
 .role {
-    background-color: #58b368;
+    background-color: #5c7d88;
     color: #efeeb4;
 }
 
 /* Knappar och länkar */
 .project-link, .cta-button, button {
-    background-color: #309975;
-    color: #efeeb4;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 .project-link:hover, .cta-button:hover, button:hover {
-    background-color: #58b368;
+    background-color: #f5f5f5;
+    transform: none;
+    box-shadow: none;
 }
 
 
@@ -629,24 +600,25 @@ footer {
 }
 
 .social-icon {
-    color: #454d66;
+    color: #333333;
     font-size: 1.8rem;
     transition: all 0.3s ease;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: #efeeb4;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
 }
 
 .social-icon:hover {
-    transform: translateY(-3px);
-    color: #efeeb4;
-    background-color: #454d66;
+    background-color: #f5f5f5;
+    color: #333333;
+    transform: none;
 }
 
 .social-icon:hover .bi-github {
