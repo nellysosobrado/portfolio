@@ -27,4 +27,9 @@ projectCards.forEach(card => {
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'translateY(0)';
     });
-}); 
+});
+
+function copyEmail() {
+    navigator.clipboard.writeText('nelly.sosobrado@gmail.com');
+    alert('copied "nelly.sosobrado@gmail.com" to clipboard!');
+} 
